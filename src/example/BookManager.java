@@ -14,6 +14,12 @@ public class BookManager {
 	}
 	public void remove(String title) {
 		//도서 삭제 기능
+		System.out.println("*****책 삭제*****");
+		for(int i=0;i<size;i++) {
+			if(books[i].getTitle().equals(title)) {
+				for(;i<size;i++) {	books[i]=books[i+1];	}
+			}
+		}size--;
 	}
 	public void getList() {
 		//도서 목록 기능
