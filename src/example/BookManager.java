@@ -29,5 +29,11 @@ public class BookManager {
 	}
 	public void searchByTitle(String title) {
 		//도서 검색 기능
+		System.out.println("*****책 검색*****");
+		for(int i=0;i<size;i++) {
+			if(books[i].getTitle().equals(title)) {
+				System.out.println(books[i]);
+			}
+		}
 	}
 }
