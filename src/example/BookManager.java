@@ -6,7 +6,11 @@ public class BookManager {
 	int size=0;
 	
 	public void add(String title,String author) {
-		//도서 추가 기능
+		Book b=new Book();
+		b.setTitle(title);
+		b.setAuthor(author);
+		
+		books[size++]=b;
 	}
 	public void remove(String title) {
 		//도서 삭제 기능
