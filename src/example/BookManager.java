@@ -23,6 +23,9 @@ public class BookManager {
 	}
 	public void getList() {
 		//도서 목록 기능
+		System.out.println("*****책 리스트*****");
+		for(int i=0;i<size;i++)
+			System.out.println(books[i]);
 	}
 	public void searchByTitle(String title) {
 		//도서 검색 기능
